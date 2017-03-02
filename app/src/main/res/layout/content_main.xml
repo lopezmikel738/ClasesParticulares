@@ -13,8 +13,42 @@
     tools:context="com.example.mikel.clasesparticulares.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
-    <TextView
+
+
+    <RatingBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="77dp"
+        android:id="@+id/ratingBar2"/>
+
+    <CheckBox
+        android:text="@string/recibir_clases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="18dp"
+        tools:ignore="UnknownId"
+        android:id="@+id/checkBoxRecibirClases" />
+
+
+    <CheckBox
+        android:text="@string/dar_clases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxDarClase"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/checkBoxRecibirClases"
+        android:layout_alignLeft="@+id/checkBoxRecibirClases"
+        android:layout_alignStart="@+id/checkBoxRecibirClases" />
+
+
+
+
+
 </RelativeLayout>
